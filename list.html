@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html lang="ru">
+	<body>
+		<p>
+			<a href="./index.html">Самые популярные видеоигры</a><br>
+			<a href="./list.html"><b>Список самых популярных видеоигр</b></a>
+		</p>
+		<hr>
+		<!-- Настройки  -->
+		<form><details>
+        <summary> График </summary>
+    		<table>
+    			<tr>
+    				<th>Значение по оси OX</th>
+    				<th>Результат</th>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" value="genre">Жанр<br>
+    					<input type="radio" value="company">Компания<br>
+    					<input type="radio" value="releaseYear">Год Выпуска
+    				</td>
+    				<td>
+    					<input type="checkbox" value="genre">Максимальная оценка<br>
+    					<input type="checkbox" value="company">Минимальная оценка<br>
+    					<input type="checkbox" value="releaseYear">Количество игр
+    				</td>
+    			</tr>
+    		</table>
+    		<input type="submit" value="Построить"></button>
+    		<p>Здесь будет график</p>
+    	</details></form>
+
+    	<form><details>
+    	<summary> Фильтр </summary>
+    	<p>Название: <input type="text"></p>
+    	<p>Жанр: <input type="text"></p>
+    	<p>Компания: <input type="text"></p>
+    	<p>Год выпуска: от <input type="number" min="1900" max="2025"> до <input type="number" min="1900" max="2025"></p>
+    	<p>Проданных копий: <input type="number"></p>
+    	<p>Оценка: от <input type="number"> до <input type="number"></p>
+    	<p><input type="submit" value="Найти"></p>
+    	</details></form>
+
+    	<form><details>
+    	<summary> Сортировка </summary>
+    	<p>
+    		<label>
+    			Первый уровень:
+    			<select id="firstLevel">
+    				<option value="0">Нет</option>
+    				<option value="1">Да</option>
+    			</select> 
+    		</label>
+    		по убыванию? <input type="checkbox" value="lower1"></p>
+    	<p>
+    		<label>
+    			Второй уровень:
+    			<select id="secondLevel">
+    				<option value="0">Нет</option>
+    				<option value="1">Да</option>
+    			</select> 
+    		</label>
+    		по убыванию? <input type="checkbox" value="lower2"></p>
+    	<p>
+    		<label>
+    			Третий уровень: 
+    			<select id="thirdLevel">
+    				<option value="0">Нет</option>
+    				<option value="1">Да</option>
+    			</select> 
+    		</label>
+    		по убыванию? <input type="checkbox" value="lower3"></p>
+    	</details></form>
+
+    	<table border="2" cellspacing="0">
+    		<tr>
+    			<th>Название</th>
+    			<th>Жанр</th>
+    			<th>Компания</th>
+    			<th>Год выпуска</th>
+    			<th>Проданных копий</th>
+    			<th>Оценка</th>
+    		</tr>
+    		<tr>
+				<td>Tetris</td>
+				<td>Puzzle</td>
+				<td>USSR</td>
+				<td>1984</td>
+				<td>500 млн</td>
+				<td>86</td>
+			</tr>
+			<tr>
+				<td>Minecraft</td>
+				<td>Sandbox</td>
+				<td>Mojang Studios</td>
+				<td>2009</td>
+				<td>238 млн</td>
+				<td>93</td>
+			</tr>
+    		<tr>
+				<td>Grand Theft Auto V</td>
+				<td>Action-adventure</td>
+				<td>Rockstar Games</td>
+				<td>2013</td>
+				<td>185 млн</td>
+				<td>96</td>
+			</tr>
+			<tr>
+				<td>Wii Sports</td>
+				<td>Sports</td>
+				<td>Nintendo</td>
+				<td>2006</td>
+				<td>82.9 млн</td>
+				<td>76</td>
+			</tr>
+			<tr>
+				<td>PUBG</td>
+				<td>Battle Royale</td>
+				<td>PUBG Corporation</td>
+				<td>2017</td>
+				<td>75 млн</td>
+				<td>86</td>
+			</tr>
+			<tr>
+				<td>Super Mario Bros.</td>
+				<td>Platformer</td>
+				<td>Nintendo</td>
+				<td>1985</td>
+				<td>48 млн</td>
+				<td>84</td>
+			</tr>
+			<tr>
+				<td>Mario Kart 8 Deluxe</td>
+				<td>Racing</td>
+				<td>Nintendo</td>
+				<td>2017</td>
+				<td>55 млн</td>
+				<td>92</td>
+			</tr>
+			<tr>
+				<td>Red Dead Redemption 2</td>
+				<td>Action-adventure</td>
+				<td>Rockstar Games</td>
+				<td>2018</td>
+				<td>50 млн</td>
+				<td>97</td>
+			</tr>
+			<tr>
+				<td>The Witcher 3: Wild Hunt</td>
+				<td>Action RPG</td>
+				<td>CD Projekt</td>
+				<td>2015</td>
+				<td>50 млн</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>Animal Crossing: New Horizons</td>
+				<td>Life simulation</td>
+				<td>Nintendo</td>
+				<td>2020</td>
+				<td>42 млн</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>Pokémon Red/Blue/Green</td>
+				<td>RPG</td>
+				<td>Game Freak</td>
+				<td>1996</td>
+				<td>47 млн</td>
+				<td>89</td>
+			</tr>
+			<tr>
+				<td>Terraria</td>
+				<td>Sandbox</td>
+				<td>Re-Logic</td>
+				<td>2011</td>
+				<td>44 млн</td>
+				<td>83</td>
+			</tr>
+			<tr>
+				<td>Wii Fit</td>
+				<td>Fitness</td>
+				<td>Nintendo</td>
+				<td>2007</td>
+				<td>43.8 млн</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td>New Super Mario Bros.</td>
+				<td>Platformer</td>
+				<td>Nintendo</td>
+				<td>2006</td>
+				<td>30 млн</td>
+				<td>89</td>
+			</tr>
+			<tr>
+				<td>Call of Duty: Modern Warfare (2019)</td>
+				<td>FPS</td>
+				<td>Infinity Ward</td>
+				<td>2019</td>
+				<td>30 млн</td>
+				<td>82</td>
+			</tr>
+			<tr>
+				<td>Pac-Man</td>
+				<td>Arcade</td>
+				<td>Namco</td>
+				<td>1980</td>
+				<td>40 млн</td>
+				<td>87</td>
+			</tr>
+			<tr>
+				<td>Mario Kart Wii</td>
+				<td>Racing</td>
+				<td>Nintendo</td>
+				<td>2008</td>
+				<td>37 млн</td>
+				<td>82</td>
+			</tr>
+			<tr>
+				<td>The Legend of Zelda: Breath of the Wild</td>
+				<td>Action-adventure</td>
+				<td>Nintendo</td>
+				<td>2017</td>
+				<td>30 млн</td>
+				<td>97</td>
+			</tr>
+			<tr>
+				<td>Diablo III</td>
+				<td>RPG</td>
+				<td>Blizzard Entertainment</td>
+				<td>2012</td>
+				<td>30 млн</td>
+				<td>88</td>
+			</tr>
+			<tr>
+				<td>Sonic the Hedgehog</td>
+				<td>Platformer</td>
+				<td>SEGA</td>
+				<td>1991</td>
+				<td>23 млн</td>
+				<td>82</td>
+			</tr>
+			<tr>
+				<td>Pokémon Gold/Silver</td>
+				<td>RPG</td>
+				<td>Game Freak</td>
+				<td>1999</td>
+				<td>23 млн</td>
+				<td>82</td>
+			</tr>
+			<tr>
+				<td>Duck Hunt</td>
+				<td>Light gun shooter</td>
+				<td>Nintendo</td>
+				<td>1984</td>
+				<td>28 млн</td>
+				<td>76</td>
+			</tr>
+			<tr>
+				<td>Super Mario World</td>
+				<td>Platformer</td>
+				<td>Nintendo</td>
+				<td>1990</td>
+				<td>26 млн</td>
+				<td>94</td>
+			</tr>
+			<tr>
+				<td>Grand Theft Auto: San Andreas</td>
+				<td>Action-adventure</td>
+				<td>Rockstar Games</td>
+				<td>2004</td>
+				<td>27.5 млн</td>
+				<td>95</td>
+			</tr>
+			<tr>
+				<td>Skyrim</td>
+				<td>RPG</td>
+				<td>Bethesda</td>
+				<td>2011</td>
+				<td>30 млн</td>
+				<td>94</td>
+			</tr>
+			<tr>
+				<td>Pokémon X/Y</td>
+				<td>RPG</td>
+				<td>Game Freak</td>
+				<td>2013</td>
+				<td>23 млн</td>
+				<td>87</td>
+			</tr>
+			<tr>
+				<td>The Sims</td>
+				<td>Life simulation</td>
+				<td>Maxis</td>
+				<td>2000</td>
+				<td>20 млн</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>Super Mario Odyssey</td>
+				<td>Platformer</td>
+				<td>Nintendo</td>
+				<td>2017</td>
+				<td>26 млн</td>
+				<td>97</td>
+			</tr>
+			<tr>
+				<td>Cyberpunk 2077</td>
+				<td>RPG</td>
+				<td>CD Projekt</td>
+				<td>2020</td>
+				<td>20 млн</td>
+				<td>86</td>
+			</tr>
+			<tr>
+				<td>Resident Evil 5</td>
+				<td>Horror</td>
+				<td>Capcom</td>
+				<td>2009</td>
+				<td>13 млн</td>
+				<td>83</td>
+			</tr>
+			<tr>
+				<td>Super Smash Bros. Ultimate</td>
+				<td>Fighting</td>
+				<td>Nintendo</td>
+				<td>2018</td>
+				<td>31 млн</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>FIFA 18</td>
+				<td>Sports</td>
+				<td>EA Sports</td>
+				<td>2017</td>
+				<td>26 млн</td>
+				<td>84</td>
+			</tr>
+			<tr>
+				<td>StarCraft II</td>
+				<td>RTS</td>
+				<td>Blizzard Entertainment</td>
+				<td>2010</td>
+				<td>10 млн</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>Gears of War 3</td>
+				<td>TPS</td>
+				<td>Epic Games</td>
+				<td>2011</td>
+				<td>11 млн</td>
+				<td>91</td>
+			</tr>
+			<tr>
+				<td>Dark Souls III</td>
+				<td>Action RPG</td>
+				<td>FromSoftware</td>
+				<td>2016</td>
+				<td>10 млн</td>
+				<td>89</td>
+			</tr>
+			<tr>
+				<td>Half-Life 2</td>
+				<td>FPS</td>
+				<td>Valve</td>
+				<td>2004</td>
+				<td>12 млн</td>
+				<td>96</td>
+			</tr>
+			<tr>
+				<td>Assassin’s Creed III</td>
+				<td>Action-adventure</td>
+				<td>Ubisoft</td>
+				<td>2012</td>
+				<td>13 млн</td>
+				<td>85</td>
+			</tr>
+			<tr>
+				<td>Metal Gear Solid V</td>
+				<td>Action-adventure</td>
+				<td>Konami</td>
+				<td>2015</td>
+				<td>7 млн</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>Halo 3</td>
+				<td>FPS</td>
+				<td>Bungie</td>
+				<td>2007</td>
+				<td>14.5 млн</td>
+				<td>94</td>
+			</tr>
+			<tr>
+				<td>Need for Speed: Most Wanted</td>
+				<td>Racing</td>
+				<td>EA</td>
+				<td>2005</td>
+				<td>16 млн</td>
+				<td>84</td>
+			</tr>
+			<tr>
+				<td>Final Fantasy VII</td>
+				<td>RPG</td>
+				<td>Square Enix</td>
+				<td>1997</td>
+				<td>13 млн</td>
+				<td>92</td>
+			</tr>
+			<tr>
+				<td>Counter-Strike: Global Offensive</td>
+				<td>FPS</td>
+				<td>Valve</td>
+				<td>2012</td>
+				<td>20 млн</td>
+				<td>83</td>
+			</tr>
+			<tr>
+				<td>Battlefield 1</td>
+				<td>FPS</td>
+				<td>EA DICE</td>
+				<td>2016</td>
+				<td>15 млн</td>
+				<td>87</td>
+			</tr>
+			<tr>
+				<td>Star Wars Battlefront</td>
+				<td>FPS</td>
+				<td>EA DICE</td>
+				<td>2015</td>
+				<td>14 млн</td>
+				<td>75</td>
+			</tr>
+			<tr>
+				<td>Horizon Zero Dawn</td>
+				<td>Action-adventure</td>
+				<td>Guerrilla Games</td>
+				<td>2017</td>
+				<td>20 млн</td>
+				<td>89</td>
+			</tr>
+			<tr>
+				<td>Fallout 4</td>
+				<td>RPG</td>
+				<td>Bethesda</td>
+				<td>2015</td>
+				<td>13.5 млн</td>
+				<td>88</td>
+			</tr>
+			<tr>
+				<td>Overwatch</td>
+				<td>FPS</td>
+				<td>Blizzard Entertainment</td>
+				<td>2016</td>
+				<td>50 млн</td>
+				<td>91</td>
+			</tr>
+			<tr>
+				<td>Splatoon 2</td>
+				<td>Shooter</td>
+				<td>Nintendo</td>
+				<td>2017</td>
+				<td>12 млн</td>
+				<td>83</td>
+			</tr>
+			<tr>
+				<td>The Last of Us Part II</td>
+				<td>Action-adventure</td>
+				<td>Naughty Dog</td>
+				<td>2020</td>
+				<td>10 млн</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>Among Us</td>
+				<td>Party</td>
+				<td>InnerSloth</td>
+				<td>2018</td>
+				<td>15 млн</td>
+				<td>78</td>
+			</tr>
+    	</table>
+		<!-- Таблица -->
+		<!-- Название | Жанр | Компания | Год выпуска | Проданных копий | Оценка -->
+	</body>
+</html>
